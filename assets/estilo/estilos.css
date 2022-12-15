@@ -1,33 +1,83 @@
 @charset "UTF-8";
 
+:root{
+    --cor1:#E2F1F8;
+    --cor2:#8BCEC7;
+    --cor3:#4FA8A2;
+    --cor4:#367675;
+    --cor5:#542A76;
+
+
+}
+
+
+*{
+    margin: 0;  
+
+}
+
+body{
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor4));
+    background-attachment: fixed;
+    height: 100vh;
+}
 
 div#formulario{
     background-color: white;
+    width: 400px;
+    height: 250px;
+    border-color: var(--cor5);
+    border-width: 1px;
     border-style: solid;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    padding: 15px;
-}
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    
+}   
 
 #divuser{
     background-image: url('https://i.imgur.com/eKw2dvH.png');
     background-repeat: no-repeat;
     background-position: left;
     background-size: 1.2em;
-    padding-left: 1.3em;
+    padding-left: 1em;
     border-width: 1px;
     border-style: solid;
-    border-color: rgba(41, 0, 128, 0.671);
-    background-color: rgba(41, 0, 128, 0.671);
-    border-radius: 10px;
+    border-color: #5B2A83;
+    background-color: #5B2A83;
+    border-radius: 6px;
+    margin: 10px;
 }
 
-#iusuario{
-    background-color: rgb(121, 198, 254);
-    color: darkgray;
-    
+#divsenha{
+    padding-left: 1em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #5B2A83;
+    background-color: #5B2A83;
+    border-radius: 6px;
+    margin: 10px;
 }
+
+#iusuario, #isenha{
+    background-color: var(--cor2);
+    color: darkgray;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+
 
 div > h1 {
     text-align: center;
+    padding: 10px;
+}
+
+div > p {
+    padding: 10px;
 }
