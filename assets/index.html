@@ -14,20 +14,20 @@
                 Foto
             </div>
             <div id="formulario">
-                <h1>Ljogin</h1>
+                <h1>Login</h1>
                 <p>Seja bem-vindo novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post">
                     <div id="divuser">
                         <p>
                             <label for="iusuario"></label>
-                            <input type="text" name="usuario" id="iusuario" placeholder="seu e-mail">
+                            <input type="text" name="usuario" id="iusuario" required placeholder="seu e-mail">
                             
                         </p>
                     </div>
-                    <div>
+                    <div id="divsenha">
                         <p>
                             <label for="isenha">Senha: </label>
-                            <input type="password" name="senha" id="isenha">
+                            <input type="password" name="senha" id="isenha" required placeholder="sua senha">
                         </p>
                     <div>
                 </form>
