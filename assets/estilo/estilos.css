@@ -2,10 +2,11 @@
 
 :root{
     --cor1:#E2F1F8;
-    --cor2:#8BCEC7;
+    --cor2:#99CBCC;
     --cor3:#4FA8A2;
     --cor4:#367675;
-    --cor5:#542A76;
+    --cor5:#836291;
+    --cor6:#542A76;
 
 
 }
@@ -17,7 +18,7 @@
 }
 
 body{
-    background-image: linear-gradient(to bottom, var(--cor5), var(--cor4));
+    background-image: linear-gradient(to bottom, var(--cor6), var(--cor4));
     background-attachment: fixed;
     height: 100vh;
 }
@@ -25,12 +26,12 @@ body{
 div#formulario{
     background-color: white;
     width: 400px;
-    height: 250px;
+    height: 300px;
     border-color: var(--cor5);
     border-width: 1px;
     border-style: solid;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     padding: 20px;
     position: absolute;
     top: 50%;
@@ -48,20 +49,22 @@ div#formulario{
     padding-left: 1em;
     border-width: 1px;
     border-style: solid;
-    border-color: #5B2A83;
-    background-color: #5B2A83;
+    border-color: var(--cor5);
+    background-color: var(--cor5);
     border-radius: 6px;
     margin: 10px;
 }
 
 #divsenha{
+    max-width: 400px;
     padding-left: 1em;
     border-width: 1px;
     border-style: solid;
-    border-color: #5B2A83;
-    background-color: #5B2A83;
+    border-color: var(--cor5);
+    background-color: var(--cor5);
     border-radius: 6px;
-    margin: 10px;
+    margin: 9px;
+    
 }
 
 #iusuario, #isenha{
@@ -71,7 +74,35 @@ div#formulario{
     margin: 2px;
 }
 
+#iusuario:focus{
+    background-color: var(--cor1);
+    color: black;
+}
 
+#isenha:focus{
+    background-color: var(--cor1);
+    color: black;
+}
+
+#entrar{
+    background-color: var(--cor4);
+    color: white;
+    width: 400px;
+    border-color: var(--cor4);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+}
+
+#esqueci{
+    background-color: white;
+    color: var(--cor4);
+    width: 400px;
+    border-color: var(--cor4);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+}
 
 div > h1 {
     text-align: center;
