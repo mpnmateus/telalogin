@@ -16,20 +16,30 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
                     <div id="divuser">
                         <p>
                             <label for="iusuario"></label>
-                            <input type="text" name="usuario" id="iusuario" required placeholder="seu e-mail">
+                            <input type="text" name="usuario" id="iusuario" required placeholder="seu e-mail" autocomplete="email">
                             
                         </p>
                     </div>
                     <div id="divsenha">
                         <p>
                             <label for="isenha">Senha: </label>
-                            <input type="password" name="senha" id="isenha" required placeholder="sua senha">
+                            <input type="password" name="senha" id="isenha" required placeholder="sua senha" autocomplete="current-password">
                         </p>
+                    </div>
+                    <div >
+                        <p>
+                            <input type="submit" value="Entrar" id="entrar">
+                        </p>
+                    </div>
                     <div>
+                        <p>
+                            <input type="button" value="Esqueci a senha" id="esqueci">
+                        </p>
+                    </div>
                 </form>
             </div>
         </section>
