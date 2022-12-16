@@ -1,114 +1,55 @@
 @charset "UTF-8";
 
 :root{
-    --cor1:#E2F1F8;
-    --cor2:#99CBCC;
-    --cor3:#4FA8A2;
-    --cor4:#367675;
-    --cor5:#836291;
-    --cor6:#542A76;
-
-
+    /*Paleta de cores*/
+    --cor1: #D8EBF2;
+    --cor2: #8AB5BF;
+    --cor3: #326C73;
+    --cor4: #0B1E26;
+    --cor5: #732F5B;
 }
-
-
+    
 *{
-    margin: 0;  
-
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /*A borda faz parte da conta de largura. Por padrão, ele testa por dentro da borda, mas agora quero que a borda faça parte da conta*/
 }
 
-body{
-    background-image: linear-gradient(to bottom, var(--cor6), var(--cor4));
-    background-attachment: fixed;
+body, html{
+    background-color: var(--cor5);
+    width: 100vw;
     height: 100vh;
 }
 
-div#formulario{
-    background-color: white;
-    width: 400px;
-    height: 300px;
-    border-color: var(--cor5);
-    border-width: 1px;
-    border-style: solid;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding: 20px;
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: left;
-    
-}   
+    overflow: hidden;
 
-#divuser{
-    background-image: url('https://i.imgur.com/eKw2dvH.png');
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 1.2em;
-    padding-left: 1em;
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--cor5);
-    background-color: var(--cor5);
-    border-radius: 6px;
-    margin: 10px;
-}
-
-#divsenha{
-    max-width: 400px;
-    padding-left: 1em;
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--cor5);
-    background-color: var(--cor5);
-    border-radius: 6px;
-    margin: 9px;
-    
-}
-
-#iusuario, #isenha{
-    background-color: var(--cor2);
-    color: darkgray;
-    border-radius: 6px;
-    margin: 2px;
-}
-
-#iusuario:focus{
     background-color: var(--cor1);
-    color: black;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.498);
 }
 
-#isenha:focus{
-    background-color: var(--cor1);
-    color: black;
+section#login > div#imagem{
+    display: block;
+    background: var(--cor5) url(../imagens/backpacker.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
 }
 
-#entrar{
-    background-color: var(--cor4);
-    color: white;
-    width: 400px;
-    border-color: var(--cor4);
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 6px;
-}
-
-#esqueci{
-    background-color: white;
-    color: var(--cor4);
-    width: 400px;
-    border-color: var(--cor4);
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 6px;
-}
-
-div > h1 {
-    text-align: center;
-    padding: 10px;
-}
-
-div > p {
+section#login > div#formulario{
     padding: 10px;
 }
