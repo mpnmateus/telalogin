@@ -3,8 +3,8 @@
 
 /* Typical Device Breackpoints
 ------------------------------
-Pequenas telas: até 600px
-Celular: de 600px até 768px
+Pequenas telas: até 600px -> Já criamos
+Celular: de 600px até 768px -> Já criamos
 Tablet: 768px até 992px
 Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
@@ -12,7 +12,7 @@ Grandes telas: acima de 1200px
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     section#login {
-        width: 90vw;
+        width: 80vw;
     }
 
     section#login > div#imagem {
@@ -22,7 +22,8 @@ Grandes telas: acima de 1200px
     }
     
     section#login > div#formulario {
-        
+        float: right;
+        width: 70%;
     }
 
 }
