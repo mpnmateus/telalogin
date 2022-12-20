@@ -1,5 +1,5 @@
 
-# Olá! :raising_hand: Neste projeto eu criei um website para treinar os meus conhecimentos
+# Olá! :raising_hand: Neste projeto eu criei uma tela de login para testar meus conhecimentos
 
 ## Fique a vontade para sugerir alterações, este é o momento de colocar os meus atuais conhecimentos em prática :)
 <br>
