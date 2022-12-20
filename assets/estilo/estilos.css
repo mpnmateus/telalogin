@@ -36,8 +36,8 @@ section#login{
     overflow: hidden;
 
     background-color: var(--cor1);
-    width: 250px;
-    height: 500px;
+    width: 260px;
+    height: 525px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.498);
 
@@ -50,7 +50,7 @@ section#login > div#imagem{
     background: var(--cor5) url(../imagens/backpacker.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 250px;
+    height: 210px;
 }
 
 section#login > div#formulario{
@@ -63,5 +63,84 @@ div#formulario > h1 {
 }
 
 div#formulário > p {
+    font-size: 0.7em;
+}
+
+form > div.campo {
+    background-color: var(--cor5);
+    border: 2px var(--cor5) solid;
+    display: block;
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    margin: 5px 0px; /*Margens de cima e de baixo com 5px e as da esq e dir com 0px*/
+
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span{
+    color: white;
+    /*background: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 2px;
+}
+
+div.campo > input {
+    background: var(--cor1);
+    font-size: 1em;
+    width: calc(100% - 44.5px);
+    height: 100%;
+    transform: translateY(-11.4px);
+    border: 0px;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+div.campo > input:focus-within{
+    background-color: white;
+    border: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    background-color: var(--cor3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--cor4);
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border: 1px var(--cor3) solid;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > a.botao:hover{
+    background-color: var(--cor2);
+}
+
+form > a.botao > span {
     font-size: 0.8em;
 }
