@@ -8,7 +8,7 @@
 <br>
 
 ## Neste projeto eu :books:
-- ### Continuo a solidificar os meus conhecimentos em HTML e CSS, 
+- ### Continuo a solidificar os meus conhecimentos em HTML e CSS, além de implementar algumas funcionalidades utilizando JavaScript puro.
 
 ## Quais as maiores dificuldades superadas :grey_question:
 
