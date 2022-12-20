@@ -30,7 +30,7 @@
                         <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
                         <label for="isenha">Senha</label>
                     </div>
-                    <input type="submit" value="Entrar">
+                    <input type="submit" value="Entrar" onclick="logar(); return false">
                     <a href="esqueci.html" class="botao">
                         Esqueci a senha <span class="material-icons">mail</span>
                     </a>
@@ -39,5 +39,19 @@
         </section>
     </main>
     
+    <script>
+        function logar () {
+            var login = document.getElementById('ilogin').value;
+            var senha = document.getElementById('isenha').value;
+
+            if(login == "mpnmateus@gmail.com" && senha == "12345678"){
+                alert('Sucesso!');
+                location.href = "home.html"
+            }else{
+                alert('Login e/ou Senha incorretos');
+            }
+        }
+
+    </script>
 </body>
 </html>
