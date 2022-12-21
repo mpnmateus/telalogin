@@ -18,7 +18,7 @@
 ## Quais as maiores dificuldades superadas :grey_question:
 
 - ### Responsividade do projeto;
-- ###
+- ### Tamanho e posicionamento das caixas (box).
 
 ## Linguagens utilizadas no projeto :computer:
 <br>
